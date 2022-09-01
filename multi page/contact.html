@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    <section class="sub-header">
+        <a href="index.html"><img src="images/logo.png" ></a>
+            <div class="nav-link">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="page.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="courses.html">course</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+       <h1>contact us</h1>
+
+
+    </section>
+   
+<!-----------------contact us--------------->  
+<section class="location">
+    <!---map--------------->
+    <iframe></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>xyz road , abc building</h5>
+                <p>surat , varachha</p>
+            </span>
+        </div>
+        <div class="contact-col">
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+1 6284284942</h5>
+                <p>monday to saturday, 10pm to 6pm</p>
+            </span>
+        </div>
+        <div class="contact-col">
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>info2easytutorialspro.com</h5>
+                <p>email us your query </p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col">
+        <form action="form-hander.php" method="post">
+            <input type="text" name="name" placeholder="enter your name" required>
+            <input type="email" name="email" placeholder="enter your mail" required>
+            <input type="text"name="subject" placeholder="enter your subject" required>
+            <textarea rows="8" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">send message</button></form>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>about us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eaque voluptate corporis <br>  veniam quisquam recusandae, vitae pariatur quas repellat fugiat nihil odio ratione eveniet commodi ut nesciunt, sunt dolores. Eligendi!</p>
+     <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkdin"></i>
+     </div>
+     <p>made with <i class="fa fa-heart-o"></i> by easy tutorial</p>
+</section>
+
+
+<!-----------------javascript--------------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
